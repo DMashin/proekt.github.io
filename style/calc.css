@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    line-height: 1.2;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+header {
+    background: linear-gradient(to bottom, #edebec, #cecece);
+}
+section {
+    overflow: hidden;
+    width: 1290px;
+    margin: 0 auto;
+}
+p {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+h3 {
+    color: black;
+}
+.name {
+    float: left;
+    padding: 12px;
+    font-size: 1.8rem;
+    color: #ea4e1b;
+    font-weight: bold;
+    user-select: none;
+}
+nav {    
+    font-family: Arial;
+    float: right;
+    user-select: none;
+}
+nav ul {
+    margin: 0;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+nav ul li span {
+    background-color: #ea4e1b;
+    color: white;
+}
+nav ul li a {
+    color: black;
+}
+nav ul li a, nav ul li span {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+nav ul li span {
+    padding-bottom: 0;
+}
+nav a:hover {
+    transition: 0.5s;
+    background-color: #ea4e1b;
+    color: white;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+aside {
+    width: 445px;
+    float: left;
+    margin-right: 45px;
+}
+aside span {
+    color: rgb(179, 179, 179);
+}
+aside .ol_1 li {
+    padding: 5px;
+    list-style: none;
+}
+aside .content {
+    margin: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+aside p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+aside li a {
+    text-decoration: none;
+    color: black;
+}
+aside li a:hover {
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+main {
+    float: right;
+    width: 800px;
+}
+main p {
+    text-indent: 20px;
+}
+footer {
+    margin: 30px;
+}
+
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+      border: 1px solid #000;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0s;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background-color: #a6a6a6;
+}
+
+.btn.bg-orange {
+    background-color: #ff9501;
+}

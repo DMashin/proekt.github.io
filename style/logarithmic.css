@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+section {
+    overflow: hidden;
+    width: 1290px;
+    margin: 0 auto;
+}
+header {
+    background: linear-gradient(to bottom, #edebec, #cecece);
+}
+p {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+h3 {
+    color: black;
+}
+.name {
+    float: left;
+    padding: 12px;
+    font-size: 1.8rem;
+    color: #ea4e1b;
+    font-weight: bold;
+    user-select: none;
+}
+nav {    
+    font-family: Arial;
+    float: right;
+    user-select: none;
+}
+nav ul {
+    margin: 0;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+nav ul li span {
+    background-color: #ea4e1b;
+    color: white;
+}
+nav ul li a {
+    color: black;
+}
+nav ul li a, nav ul li span {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+nav a:hover {
+    transition: 0.5s;
+    background-color: #ea4e1b;
+    color: white;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+aside {
+    width: 445px;
+    margin-right: 45px;
+    float: left;
+}
+aside span {
+    color: rgb(179, 179, 179);
+}
+aside .ol_1 li {
+    padding: 5px;
+    list-style: none;
+}
+aside ol:last-child li {
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    list-style-type: none;
+    counter-increment: list;
+}
+aside ol:last-child li:before {
+    content: counter(list) " ";
+    margin-left: -15px;
+}
+aside ol:last-child a {
+    color: #0645ad;
+    padding-left: 5px;
+}
+aside .content {
+    margin: 10px;
+    width: 400px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+aside p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+aside li a {
+    text-decoration: none;
+    color: black;
+}
+aside li a:hover {
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    background-color: #66656a;
+    padding: 30px 0;
+    line-height: 0.5;
+    color: white;
+    margin-top: 50px;
+}

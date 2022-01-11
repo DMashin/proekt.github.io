@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+section {
+    overflow: hidden;
+    width: 1290px;
+    margin: 0 auto;
+}
+header {
+    background: linear-gradient(to bottom, #edebec, #cecece);
+}
+p {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+h3 {
+    color: black;
+}
+.name {
+    float: left;
+    padding: 12px;
+    font-size: 1.8rem;
+    color: #ea4e1b;
+    font-weight: bold;
+    user-select: none;
+}
+nav {    
+    font-family: Arial;
+    float: right;
+    user-select: none;
+}
+nav ul {
+    margin: 0;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+nav ul li span {
+    background-color: #ea4e1b;
+    color: white;
+}
+nav ul li a {
+    color: black;
+}
+nav ul li a, nav ul li span {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+nav a:hover {
+    transition: 0.5s;
+    background-color: #ea4e1b;
+    color: white;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+aside {
+    width: 445px;
+    float: left;
+    margin-right: 45px;
+}
+aside .ol_1 li {
+    padding: 5px;
+    list-style: none;
+}
+aside ol li span {
+    color: gray;
+}
+aside ol li a {
+    text-decoration: none;
+    color: black;
+}
+aside ol li a:hover {
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+main {
+    float: right;
+    width: 800px;
+}
+footer {
+    background-color: #66656a;
+    color: white;
+    margin-top: 50px;
+    font-family: 'Times New Roman';
+}
+footer ul li {
+    list-style: none;
+    padding: 10px 0 10px 0;
+}

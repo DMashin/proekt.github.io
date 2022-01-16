@@ -85,6 +85,15 @@ main {
     float: right;
     width: 800px;
 }
+main .input {
+    margin-top: 30px;
+    padding: 5px;
+    user-select: none;
+}
+main h1 {
+    text-align: center;
+    
+}
 footer {
     background-color: #66656a;
     color: white;

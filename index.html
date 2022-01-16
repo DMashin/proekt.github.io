@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/function-plot/1.22.7/function-plot.js"></script>
     <title>Главная</title>
 </head>
 <body>
@@ -15,7 +16,6 @@
                         <nav>
                             <ul>
                                 <li><span>ГЛАВНАЯ</span></li>
-                                <li><a href="sites/calculator.html">КАЛЬКУЛЯТОР</a></li>
                                 <li><a href="sites/site.html">О САЙТЕ</a></li>
                             </ul>
                         </nav>
@@ -36,19 +36,52 @@
     </aside>
     <main>
         <div>
-            
+            <h1>Построение графиков</h1>
+            <div class="input">y(x) = <input id="functionInput" placeholder="Введите функцию"/></div>
+            <div id="message"></div>
+            <div id="plot"></div>
+            <div id="root"></div>
+            <script>
+                const functionPlot = window.functionPlot;
+                const inputFunction = document.getElementById('functionInput');
+                const message = document.getElementById('message');
+                const plot = document.getElementById('plot');
+                inputFunction.addEventListener('input', (e) => {
+                    const functionValue = inputFunction.value.replace(/ /g, ''); //убираем все пробелы из строки
+                    console.log(functionValue)
+                    if (functionValue) { // и проверяем, не пустая ли строка
+                        try {
+                            functionPlot({
+                                title: functionValue,
+                                width: 750,
+                                height: 750,
+                                target: "#plot",
+                                yAxis: {
+                                    label: 'y'
+                                },
+                                xAxis: {
+                                    label: 'x'
+                                },
+                                grid: true,
+                                data: [
+                                    {
+                                        fn: functionValue,
+                                    }
+                                ]
+                            });
+                            message.innerText = ''; // "обнуляем" сообщение, иначе после первой ошибки оно останется висеть
+                        } catch (e) {
+                            console.log(e)
+                            message.innerText = 'Некорректная функция'
+                            plot.innerText = '';
+                        }
+                    } else {
+                        message.innerText = 'Вы ввели пустой текст'
+                    }
+                });
+            </script>
         </div>
     </main>
 </section>
-    <footer>
-        <div>
-            <section>
-                <ul>
-                    <li>Политика конфиденциальности...</li>
-                    <li>&copy; 2022</li>
-                </ul>
-            </section>
-        </div>
-    </footer>
 </body>
 </html>

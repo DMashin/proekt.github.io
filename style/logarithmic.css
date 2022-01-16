@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.2;
+    line-height: 1.5;
     font-family: sans-serif;
     background-color: #fff;
 }
@@ -108,10 +108,46 @@ aside li a:hover {
     color: rgb(50, 50, 50);
     font-weight: bold;
 }
-
-
-
-
+main {
+    width: 800px;
+    float: right;
+}
+main h1 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+main h3 {
+    font-size: 1.5rem;
+    border-bottom: 1px gray solid;
+    padding-bottom: 5px;
+}
+main b {
+    color: rgb(85, 28, 28);
+}
+main span {
+    color: black;
+    font-weight: bold;
+}
+main p {
+    text-indent: 20px;
+}
+main table {
+    width: 560px;
+    border: 0px none;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px #ccc solid;
+    vertical-align: top;
+    font-weight: normal;
+}
+main figcaption {
+    width: 630px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 footer {
     background-color: #66656a;
     padding: 30px 0;

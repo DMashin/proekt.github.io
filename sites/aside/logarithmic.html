@@ -15,7 +15,6 @@
                         <nav>
                             <ul>
                                 <li><a href="../../index.html">ГЛАВНАЯ</a></li>
-                                <li><a href="../calculator.html">КАЛЬКУЛЯТОР</a></li>
                                 <li><a href="../site.html">О САЙТЕ</a></li>
                             </ul>
                         </nav>
@@ -36,28 +35,67 @@
             <div class="content">
                 <p>Содержание</p>
                     <ol>
-                        <li><a href="#definition">Определение</a></li>
-                        <li><a href="#line">Линейная функция</a></li>
-                        <li><a href="#square">Квадратичная функция</a></li>
-                        <li><a href="#even">Функция y = x<sup>n</sup>, n = 2, 4, 6,...</a></li>
-                        <li><a href="#odd">Функция y = x<sup>n</sup>, n = 3, 5, 7,...</a></li>
-                        <li><a href="#inverse_proportionality">Функция обратной пропорциональности</a></li>
-                        <li><a href="#square_root">Функция квадратный корень из x</a></li>
-                        <li><a href="#cubic_root">Функция кубический корень из x</a></li>
+                        <li><a href="#definition">Определение логарифма</a></li>
+                        <li><a href="#logarithmic">Логарифмитическая функция и ее график</a></li>
+                        <li><a href="#properties">Свойства функции</a></li>
                     </ol>
             </div>
         </aside>
         <main>
             <div>
-                
+                <h1>Логарифмические функции</h1>
+                <h3 id="definition">Определение логарифма</h3>
+                    <p><b>Логарифм</b> по основанию <span>a</span> от аргумента <span>x</span> — это степень, в которую надо возвести число <span>a</span>, чтобы получить число <span>x</span>.</p>
+                    <p>Обозначение: <b>log<sub>a</sub>x = b</b>, где <span>a</span> — основание, <span>x</span> — аргумент, <span>b</span> — собственно, чему равен логарифм.</p>
+                    <p>Операцию нахождения логарифма числа по заданному основанию называют логарифмированием.</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>2<sup>1</sup></td>
+                                <td>2<sup>2</sup></td>
+                                <td>2<sup>3</sup></td>
+                                <td>2<sup>4</sup></td>
+                                <td>2<sup>5</sup></td>
+                                <td>2<sup>6</sup></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>8</td>
+                                <td>16</td>
+                                <td>32</td>
+                                <td>64</td>
+                            </tr>
+                            <tr>
+                                <td>log<sub>2</sub> 2 = 1</td>
+                                <td>log<sub>2</sub> 4 = 2</td>
+                                <td>log<sub>2</sub> 8 = 3</td>
+                                <td>log<sub>2</sub> 16 = 4</td>
+                                <td>log<sub>2</sub> 32 = 5</td>
+                                <td>log<sub>2</sub> 64 = 6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <h3 id="logarithmic">Логарифмитическая функция и ее график</h3>
+                    <p><b>Логарифмической функцией</b> называется функция вида y = log<sub>a</sub>x, где a > 0 и a ≠ 1.</p>
+                        <p>График функции имеет следующий вид:</p>
+                            <img src="http://mmf.kubsu.ru/images/handbook/logarithmic_function/theory/1.png" alt="logarithmic">
+                            <img src="../../images/logarithmic.png" alt="logarithmic">
+                            <figcaption>y(x) = log<sub>2</sub> x</figcaption>
+                <h3 id="properties">Свойства функции</h3>
+                    <p>Рассмотрим <b>свойства функции:</b></p>
+                        <ul>
+                            <li>Областью определения функции является множество всех положительных чисел D(y) = (0; +∞);</li>
+                            <li>Множеством значений функции являются все действительные числа R;</li>
+                            <li>Наименьшего и наибольшего значений функция не имеет;</li>
+                            <li>Функция не является ни нечетной, ни четной. Имеет общий вид;</li>
+                            <li>Функция непереодическая;</li>
+                            <li>Нули функции: функция пересекает координатную ось Ox в точке (1; 0);</li>
+                            <li>При a > 1 функция возрастает, при 0 < a < 1 функция убывает.</li>
+                        </ul>
+
             </div>
         </main>
 </section>
-    <footer>
-        <div>
-            <section>
-            </section>
-        </div>
-    </footer>
 </body>
 </html>

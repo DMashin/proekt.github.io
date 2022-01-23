@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/all.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/function-plot/1.22.7/function-plot.js"></script>
-    <link href="../../images/favicon.ico" rel="icon">
+    <link href="images/favicon.ico" rel="icon">
     <title>Главная</title>
 </head>
 <body>
@@ -17,6 +17,7 @@
                         <nav>
                             <ul>
                                 <li><span>ГЛАВНАЯ</span></li>
+                                <li><a href="sites/reference.html">СПРАВКА</a></li>
                                 <li><a href="sites/site.html">О САЙТЕ</a></li>
                             </ul>
                         </nav>
@@ -38,8 +39,8 @@
     <main>
         <div>
             <h1>Построение графиков</h1>
-            <div class="input">y(x) = <input id="functionInput" placeholder="Введите функцию"/></div>
-            <div id="message"></div>
+            <div class="input">y(x) = <input id="functionInput" placeholder="Введите функцию"></div>
+            <div id="message" class="message"></div>
             <div id="plot"></div>
             <div id="root"></div>
             <script>
@@ -49,11 +50,11 @@
                 const plot = document.getElementById('plot');
                 inputFunction.addEventListener('input', (e) => {
                     const functionValue = inputFunction.value.replace(/ /g, ''); //убираем все пробелы из строки
-                    console.log(functionValue)
+                    //console.log(functionValue)
                     if (functionValue) { // и проверяем, не пустая ли строка
                         try {
                             functionPlot({
-                                title: functionValue,
+                                //title: functionValue,
                                 width: 750,
                                 height: 750,
                                 target: "#plot",
@@ -72,14 +73,15 @@
                             });
                             message.innerText = ''; // "обнуляем" сообщение, иначе после первой ошибки оно останется висеть
                         } catch (e) {
-                            console.log(e)
-                            message.innerText = 'Некорректная функция'
+                            //console.log(e)
+                            message.innerText = 'Некорректная функция!!!';
                             plot.innerText = '';
                         }
                     } else {
-                        message.innerText = 'Вы ввели пустой текст'
+                        message.innerText = 'Вы ввели пустой текст!!!';
                     }
                 });
+                function arcctg(x) { return Math.PI / 2 - Math.atan(x); }
             </script>
         </div>
     </main>

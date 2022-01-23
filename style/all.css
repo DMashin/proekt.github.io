@@ -4,6 +4,7 @@ body {
     line-height: 1.5;
     font-family: sans-serif;
     background-color: #fff;
+    overflow-y: scroll;
 }
 section {
     overflow: hidden;
@@ -85,22 +86,38 @@ main {
     float: right;
     width: 800px;
 }
+main h3 {
+    text-align: center;
+}
+main table {
+    border: 0px;
+    border-collapse: collapse;
+    width: 600px;
+}
+main .reference {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+main th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px #ccc solid;
+    vertical-align: top;
+    font-size: 13px;
+}
+main input {
+    font-size: 22px;
+}
+main .message {
+    text-align: center;
+}
 main .input {
     margin-top: 30px;
     padding: 5px;
+    font-size: 22px;
     user-select: none;
+    text-align: center;
 }
 main h1 {
     text-align: center;
-    
-}
-footer {
-    background-color: #66656a;
-    color: white;
-    margin-top: 50px;
-    font-family: 'Times New Roman';
-}
-footer ul li {
-    list-style: none;
-    padding: 10px 0 10px 0;
 }

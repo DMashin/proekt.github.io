@@ -41,7 +41,6 @@ nav ul li {
     list-style: none;
     float: left;
     border-right: 1px solid #ccc;
-    margin-top: 0;
 }
 nav ul li span {
     background-color: #ea4e1b;
@@ -87,13 +86,22 @@ main {
     float: right;
     width: 800px;
 }
-footer {
-    background-color: #66656a;
-    color: white;
-    margin-top: 50px;
-    font-family: 'Times New Roman';
+main h3 {
+    text-align: center;
 }
-footer ul li {
-    list-style: none;
-    padding: 10px 0 10px 0;
+main table {
+    border: 0px;
+    border-collapse: collapse;
+    width: 600px;
+}
+main .reference {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+main th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px #ccc solid;
+    vertical-align: top;
+    font-size: 13px;
 }

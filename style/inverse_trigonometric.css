@@ -6,9 +6,12 @@ body {
     background-color: #fff;
 }
 section {
-    overflow: hidden;
     width: 1290px;
     margin: 0 auto;
+}
+.hat {
+    position: relative;
+    height: 65px;
 }
 header {
     background: linear-gradient(to bottom, #edebec, #cecece);
@@ -21,17 +24,21 @@ h3 {
     color: black;
 }
 .name {
-    float: left;
     padding: 12px;
     font-size: 1.8rem;
     color: #ea4e1b;
     font-weight: bold;
     user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-nav {    
+nav {
     font-family: Arial;
-    float: right;
     user-select: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 nav ul {
     margin: 0;
@@ -63,6 +70,7 @@ nav ul li:last-child {
 }
 aside {
     width: 445px;
+    height: 4513px;
     margin-right: 45px;
     float: left;
 }
@@ -93,6 +101,8 @@ aside .content {
     width: 400px;
     border: 1px black solid;
     border-radius: 10px;
+    position: sticky;
+    top: 10px;
 }
 aside p {
     text-align: center;
